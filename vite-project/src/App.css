@@ -1,0 +1,355 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(33, 43, 54);
+
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Replace with your desired background color and adjust the alpha (opacity) as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+  z-index: 1000; 
+  /* border: 1px solid red; */
+
+}
+
+.navbar box-1{
+  width: 500px;
+  /* border: 1px solid red; */
+
+}
+
+.navbar box-1 h1{
+  font-weight: 800;
+  color: rgb(33, 43, 54);
+
+}
+.navbar box-1 h1 span {
+  color: red;
+  font-size: 2.5rem;
+}
+
+.navbar .box-2{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+}
+.navbar .box-2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.navbar .box-3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+
+}
+
+.btn{
+  padding: .8rem 1rem;
+  background-color:rgb(33, 43, 54);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.hamburger{
+  display: none;
+  
+}
+/* Add your existing styles for navbar, logo, and menu items here */
+
+/* Sidebar Styles */
+.sidebar {
+  display: none;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.8); /* White with some opacity */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50rem;
+  width: 300px;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.sidebar a {
+  color: #fff; /* Set text color as needed */
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sidebar-logo span{
+  color: orange;
+}
+
+.sidebar-links{
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+.sidebar-links a{
+  color: #333;
+}
+.sidebar-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+
+}
+.sidebar-btn button{
+  padding: .8rem 6.2rem;
+  background-color:rgb(33, 43, 54);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+@media screen and (max-width: 800px) {
+ 
+  .navbar{
+    justify-content: space-between;
+  }
+  .hamburger{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px 
+  }
+  
+  .navbar .box-2{
+    display: none;
+  } 
+  .navbar .box-3{
+    display: none;
+  }
+
+  .navbar h1{
+    width: 60%;
+  }
+  .sidebar {
+    display: block;
+  }
+
+}
+
+.banner{
+ margin-top: 7rem;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
+}
+.banner-left{
+  width: 50%;
+  margin-left: 4rem;
+}
+.banner-left h1{
+  font-size: 4rem;
+  width: 500px;
+  color: rgb(33, 43, 54);
+  
+}
+.banner-left h1 span{
+  color: orangered;
+}
+
+.banner-left p{
+  /* font-size: 4rem; */
+  width: 500px;
+  margin-top: 1.5rem;
+  color: rgb(33, 43, 54);
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+.banner-left button{
+  margin-top: 1.5rem;
+}
+
+
+.banner-right{
+  width: 50%;
+}
+.banner-right img{
+  width: 100%;
+  margin-top: -5rem;
+  /* border: 1px solid red; */
+}
+
+
+@media screen and (max-width: 900px) {
+  .banner{
+    justify-content: center;
+  }
+  .banner-right{
+    display: none;
+  }
+  .banner-left{
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .banner-left h1{
+    width: 600px;
+    margin: auto;
+    font-size: 3rem;
+  }
+  .banner-left p{
+    width: 600px;
+    margin: auto;
+    margin-top: 1.5rem;
+
+  }
+}
+
+.new-start{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+.new-start img{
+  width: 30rem;
+}
+
+.new-start h3{
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+.new-start span{
+  color: orangered;
+
+}
+
+.new-start p{
+  margin-top: 1.5rem;
+  width: 500px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-around;
+  /* max-width: 900px; */
+  margin: 0 auto;
+  padding: 20px;
+  width: 90%;
+  margin-top: 5rem;
+}
+
+
+.pricing-column {
+  flex: 1;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.pricing-column div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.pricing-column div p{
+  font-size: 1.5rem;
+  font-weight: 600;
+}   
+.pricing-column li{
+  list-style: none;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.pricing-column button{
+  background-color: rgb(33, 43, 54);
+  padding: 1rem 6rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.pricing-column li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pricing-column span{
+  color: orangered;
+}
+
+.left button{
+  background-color: white;
+  border: 1px solid rgb(33, 43, 54);
+  color: rgb(33, 43, 54);
+}
+
+.middle button{
+  background-color: rgb(33, 43, 54);
+  color: #fff;
+}
+
+.right button{
+  background-color: orangered;
+  color: #fff;
+}
+
+.price-head{
+  margin-top: 7rem;
+  text-align: center;
+  color: rgb(33, 43, 54);
+
+}
+.price-head h1{
+  font-size: 3rem;
+  width: 450px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 900px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-column {
+    width: 100%;
+  }
+}
